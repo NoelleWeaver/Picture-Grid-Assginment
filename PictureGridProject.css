@@ -1,0 +1,151 @@
+
+.contanier{
+    display:grid;
+    grid-template-columns: [one] 15rem [two] 15rem [three] 15rem [four] 15rem [five] 15rem [end];
+    grid-template-rows: [first] 5rem [second] 5rem [third] 10.5rem [fourth] 24rem [fifth] 17rem [sixth] 10rem [seventh] 9rem [eighth] 10rem [ninth];
+    justify-items: stretch;
+    align-items: stretch;
+    gap: 18px;
+}
+
+body {
+    border: gray 12px solid;
+    width: fit-content;
+    margin: auto;
+}
+
+.logo{
+    grid-column: one/ five;
+    grid-row: first/ third;
+}
+
+.pic1{
+    grid-column: five/ end;
+    grid-row: first/ second;
+}
+
+.pic2{
+    grid-column: five/ end;
+    grid-row: second/ third;
+}
+
+.pic3{
+    grid-column: five/ end;
+    grid-row: third/ fourth;
+}
+
+.pic4{
+    grid-column: one/ two;
+    grid-row: fourth/ fifth;
+}
+
+.pic5{
+    grid-column: three/ four;
+    grid-row: fourth/ fifth;
+}
+
+.pic6{
+    grid-column: four/ five;
+    grid-row: fourth/ fifth;
+}
+
+.pic7{
+    grid-column: five/ end;
+    grid-row: fourth/ fifth;
+}
+
+.pic8{
+    grid-column: one/ two;
+    grid-row: fifth/ sixth;
+}
+
+.pic9{
+    grid-column: two/ four;
+    grid-row: fifth/ sixth;
+}
+
+.pic10{
+    grid-column: four/ five;
+    grid-row: fifth/ sixth;
+}
+
+.pic11{
+    grid-column: five/ end;
+    grid-row: fifth/ sixth;
+}
+
+.pic12{
+    grid-column: one/ two;
+    grid-row: seventh/ eighth;
+}
+
+.pic13{
+    grid-column: two/ three;
+    grid-row: sixth/ eighth;
+}
+
+.pic14{
+    grid-column: three/ five;
+    grid-row: sixth/ seventh;
+}
+
+.pic15{
+    grid-column: five/ end;
+    grid-row: sixth/ seventh;
+}
+
+.pic16{
+    grid-column: three/ four;
+    grid-row: seventh/ eighth;
+}
+
+.pic17{
+    grid-column: four/ five;
+    grid-row: seventh/ eighth;
+}
+
+.pic18{
+    grid-column: five/ end;
+    grid-row: seventh/ eighth;
+}
+
+.pic19{
+    grid-column: one/ two;
+    grid-row: eighth/ ninth;
+}
+
+.pic20{
+    grid-column: two/ four;
+    grid-row: eighth/ ninth;
+}
+
+.paragraph{
+    grid-column: five / end;
+    grid-row: eighth / ninth;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: end;
+    justify-content: end;
+    text-align: right;
+    padding-right: 10px;
+}
+
+p{
+    color: red;
+    font-size: medium;
+}
+
+.nav {
+    background-color: #ff7d7d;
+    overflow: hidden;
+  }
+  
+.nav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
